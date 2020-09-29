@@ -1,0 +1,23 @@
+function countsEvenAndOddElements(array) {
+  let quantityNumbers = [0, 0, 0];
+
+  array.forEach(function(item) {
+    if (typeof item !== "number") {
+      return undefined;
+    }
+    if (isNaN(item)) {
+      return undefined;
+    }
+    if (item === 0) {
+      return quantityNumbers[2]++;
+    }
+    if (item % 2 !== 0) {
+      return quantityNumbers[1]++;
+    }
+    if (item % 2 === 0) {
+      return quantityNumbers[0]++;
+    }
+  });
+  return quantityNumbers;
+}
+module.exports = countsEvenAndOddElements;
