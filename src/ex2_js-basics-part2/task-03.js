@@ -1,7 +1,7 @@
 function countsEvenAndOddElements(arr) {
   let quantityNumbers = [0, 0, 0];
 
-  arr.forEach(function (item) {
+  arr.forEach((item) => {
     if (typeof item !== "number") {
       return undefined;
     }
