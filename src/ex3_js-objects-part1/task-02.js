@@ -6,4 +6,5 @@ function outputsElementsObject(obj) {
   }
   return;
 }
+
 module.exports = outputsElementsObject;
