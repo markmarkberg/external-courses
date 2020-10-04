@@ -5,6 +5,8 @@ function getType(value) {
   if (typeof value === "string") {
     return "string";
   }
+  
   return undefined;
 }
+
 module.exports = getType;

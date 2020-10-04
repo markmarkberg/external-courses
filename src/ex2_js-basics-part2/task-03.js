@@ -17,7 +17,10 @@ function countsEvenAndOddElements(arr) {
     if (item % 2 === 0) {
       return quantityNumbers[0]++;
     }
+    return quantityNumbers;
   });
+
   return quantityNumbers;
 }
+
 module.exports = countsEvenAndOddElements;

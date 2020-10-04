@@ -4,7 +4,9 @@ function checkElements(arr) {
       return false;
     }
   }
+
   return true;
 }
+
 module.exports = checkElements; 
 
