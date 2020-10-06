@@ -1,14 +1,12 @@
 function getType(value) {
-  const valuesNumber = typeof value === "number" && !isNaN(value);
+  const typeValue = typeof value;
 
-  const valuesString = typeof value === "string";
-
-  if (valuesNumber) {
-    return "number";
+  if (typeValue === "number" && !isNaN(value)) {
+    return typeValue;
   }
 
-  if (valuesString) {
-    return "string";
+  if (typeValue === "string") {
+    return typeValue;
   }
 
   return undefined;
