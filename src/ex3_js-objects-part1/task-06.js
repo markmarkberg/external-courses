@@ -4,12 +4,15 @@ function getDeepCopyInObject(obj) {
   if (Array.isArray(obj)) {
     newObj = [];
   }
+
   for (let key in obj) {
-    newObj[key] = obj[key];
     if (typeof obj[key] === "object") {
       newObj[key] = getDeepCopyInObject(obj[key]);
+    } else {
+      newObj[key] = obj[key];
     }
   }
+
   return newObj;
 }
 

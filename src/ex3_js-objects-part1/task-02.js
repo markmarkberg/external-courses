@@ -4,6 +4,7 @@ function outputsElementsObject(obj) {
       console.log(`${key} : ${obj[key]}`);
     }
   }
+  
   return;
 }
 
