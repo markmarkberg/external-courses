@@ -1,5 +1,5 @@
-const getStringInUpperCase = (string) => {
-  return string.trim(" ");
+const getStringWithoutSpace = (string) => {
+  return string.trim();
 };
 
-module.exports = getStringInUpperCase;
+module.exports = getStringWithoutSpace;

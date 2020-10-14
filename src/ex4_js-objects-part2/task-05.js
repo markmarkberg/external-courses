@@ -1,7 +1,5 @@
 const searchesWordInString = (string, value) => {
-  const arrString = string.split(" ").some((el) => el === value);
-
-  return arrString;
+  return string.split(" ").some((el) => el === value);
 };
 
 module.exports = searchesWordInString;

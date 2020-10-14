@@ -1,5 +1,9 @@
 const truncatesALongString = (string, num) => {
-  return `${string.slice(0, num - 1)}…`;
+  if (string.length > num) {
+    return `${string.slice(0, num - 1)}…`;
+  }
+
+  return string;
 };
 
 module.exports = truncatesALongString;

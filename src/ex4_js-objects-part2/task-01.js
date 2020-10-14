@@ -1,7 +1,9 @@
 const searchInPrototype = (prop, obj) => {
-  if (obj[prop] && !obj.hasOwnProperty(prop)) {
-    return obj[prop];
+  if (Object.getPrototypeOf(obj).hasOwnProperty(prop)) {
+    return Object.getPrototypeOf(obj)[prop];
   }
+
+  return undefined;
 };
 
 module.exports = searchInPrototype;

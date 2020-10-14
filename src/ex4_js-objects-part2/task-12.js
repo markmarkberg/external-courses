@@ -1,7 +1,5 @@
 const roundsTheNumber = (numOne, numTwo) => {
-  let count = (numOne + numTwo).toFixed(3);
-
-  return +count;
+  return +(numOne + numTwo).toFixed(3);
 };
 
 module.exports = roundsTheNumber;

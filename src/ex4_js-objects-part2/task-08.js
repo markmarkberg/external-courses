@@ -1,8 +1,18 @@
 const returnsLowerCamelCase = (string) => {
-  return string
+  const arr = [];
+  
+  string
     .toLowerCase()
     .split(" ")
-    .reduce((a, b) => a + b.charAt(0).toUpperCase() + b.slice(1));
+    .forEach((el, i) => {
+      if (i === 0) {
+        arr.push(el);
+      } else {
+        arr.push(el[0].toUpperCase() + el.slice(1));
+      }
+    });
+
+  return arr.join("");
 };
 
 module.exports = returnsLowerCamelCase;

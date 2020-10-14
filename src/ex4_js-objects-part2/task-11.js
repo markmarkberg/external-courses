@@ -1,14 +1,8 @@
 const countsTheNumberOfCharactersInString = (string) => {
   const outputResult = {};
 
-  let transformation = [...string];
-
-  transformation.forEach((el, i) => {
-    let count = outputResult[transformation[i]]
-    
-      ? outputResult[transformation[i]]
-      : 0;
-    outputResult[transformation[i]] = count + 1;
+  [...string].forEach((el) => {
+    outputResult[el] = outputResult[el] + 1 || 1;
   });
 
   for (let key in outputResult) {
