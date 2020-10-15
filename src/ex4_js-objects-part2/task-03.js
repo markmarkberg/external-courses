@@ -1,5 +1,5 @@
 const getStringWithoutSpace = (string) => {
-  return string.trim();
+  return string.slice(1, -1);
 };
 
 module.exports = getStringWithoutSpace;
