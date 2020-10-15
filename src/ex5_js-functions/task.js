@@ -1,41 +1,43 @@
-const createCalculator = () => {
-  let value = 0;
+"use strict";
 
-  const add = (n = 0) => {
-    value += n;
+class Calculator {
+  constructor() {
+    this.value = 0;
 
-    return add;
-  };
+    this.add = (n = 0) => {
+      this.value += n;
+      return this.add;
+    };
 
-  const subtract = (n = 0) => {
-    value -= n;
+    this.subtract = (n = 0) => {
+      this.value -= n;
+      return this.subtract;
+    };
 
-    return subtract;
-  };
+    this.divide = (n = 1) => {
+      this.value /= n;
 
-  const divide = (n = 1) => {
-    value /= n;
+      return this.divide;
+    };
 
-    return divide;
-  };
+    this.multiply = (n = 1) => {
+      this.value *= n;
 
-  const multiply = (n = 1) => {
-    value *= n;
+      return this.multiply;
+    };
 
-    return multiply;
-  };
+    this.reset = () => {
+      this.value = 0;
 
-  const reset = (n) => {
-    return (value = 0);
-  };
+      return this.reset;
+    };
 
-  const getResult = () => {
-    return value;
-  };
+    this.getResult = () => {
+      return this.value;
+    };
+  }
+}
 
-  return { add, divide, subtract, multiply, reset, getResult };
-};
+const calculator = new Calculator();
 
-const Calculator = createCalculator();
-
-module.exports = Calculator;
+module.exports = calculator;
