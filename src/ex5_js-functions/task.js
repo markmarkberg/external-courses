@@ -6,11 +6,13 @@ class Calculator {
 
     this.add = (n = 0) => {
       this.value += n;
+
       return this.add;
     };
 
     this.subtract = (n = 0) => {
       this.value -= n;
+      
       return this.subtract;
     };
 
