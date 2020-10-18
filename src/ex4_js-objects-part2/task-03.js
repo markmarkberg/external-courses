@@ -5,7 +5,7 @@ const getStringWithoutSpace = (string) => {
     modifiedString = modifiedString.slice(1);
   }
 
-  if (string[length] === " ") {
+  if (string[string.length - 1] === " ") {
     modifiedString = modifiedString.slice(0, -1);
   }
 
@@ -13,4 +13,3 @@ const getStringWithoutSpace = (string) => {
 };
 
 module.exports = getStringWithoutSpace;
-
