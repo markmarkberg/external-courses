@@ -1,13 +1,11 @@
-function returnsCustomSome(array, callback) {
-  let result = false;
-
+const customSome = (array, callback) => {
   for (let i = 0; i < array.length; i++) {
     if (callback(array[i], i, array)) {
-      result = true;
+      return true;
     }
   }
 
-  return result;
-}
+  return false;
+};
 
-module.exports = returnsCustomSome;
+module.exports = customSome;

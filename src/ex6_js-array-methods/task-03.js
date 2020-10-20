@@ -1,15 +1,11 @@
 const customEvery = (array, callback) => {
-  let result = true;
-
   for (let i = 0; i < array.length; i++) {
-    if (callback(array[i], i, array) === false) {
-      result = false;
-
-      break;
+    if (!callback(array[i], i, array)) {
+      return false;
     }
   }
 
-  return result;
+  return true;
 };
 
 module.exports = customEvery;

@@ -1,47 +1,19 @@
-const customsSlice = (array, begin, end) => {
-  let newArr = [];
+const customSlice = (array, start = 0, end = array.length) => {
+  let newArray = [];
 
-  let firstParameter = begin;
-
-  let lastParameter = end;
-
-  if (typeof begin === "undefined") {
-    return array;
-  }
-
-  if (begin && end > 0) {
-    firstParameter = begin;
-    lastParameter = end;
-  }
-
-  if (begin === 0) {
-    firstParameter = 0;
-    lastParameter = array.length;
-  }
-
-  if (begin < 0) {
-    firstParameter = array.length + begin;
-    lastParameter = array.length;
-  }
-
-  if (end > array.length - 1) {
-    firstParameter = array.length + begin;
-    lastParameter = array.length;
+  if (start < 0) {
+    start += array.length;
   }
 
   if (end < 0) {
-    lastParameter = array.length + end;
+    end += array.length;
   }
 
-  if (typeof end === "undefined") {
-    lastParameter = array.length;
+  for (let i = start; i < end; i++) {
+    newArray.push(array[i]);
   }
 
-  for (i = firstParameter; i < lastParameter; i++) {
-    newArr.push(array[i]);
-  }
-
-  return newArr;
+  return newArray;
 };
 
-module.exports = customsSlice;
+module.exports = customSlice;
