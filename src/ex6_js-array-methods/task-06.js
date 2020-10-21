@@ -1,17 +1,11 @@
-function customReduce(array, callback, initialValue = array[0]) {
-  let start;
-
-  if (arguments.length > 2) {
-    start = 0;
-  } else {
-    start = 1;
-  }
+const customReduce = (array, callback, initialValue) => {
+  const start = initialValue !== undefined ? 0 : 1;
 
   for (let i = start; i < array.length; i++) {
-    initialValue = callback(initialValue, array[i], i, array);
+    initialValue = callback(initialValue || array[0], array[i], i, array);
   }
 
   return initialValue;
-}
+};
 
 module.exports = customReduce;
