@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css?family=Comic+Neue&display=swap");
+
+.ordered_list {
+  background: blue;
+  color: blanchedalmond;
+  border: 1mm solid green;
+  border-radius: 3px;
+}
+
+.unordered_list {
+  background: red;
+  color: burlywood;
+  border: 2px solid rebeccapurple;
+  border-radius: 3px;
+  font-size: 100%;
+}
+
+.item {
+  font-size: 120%;
+}
+
+.name {
+  font-family: "Comic Neue", cursive;
+  background: grey;
+  color: black;
+  border: 2px solid;
+  border-radius: 3px;
+}
+
+.background_paragraphs {
+  width: 500px;
+  height: 310px;
+  border: 2px solid grey;
+  border-radius: 1pc;
+  background: url(https://cdn-images-1.medium.com/max/720/1*bCCFmvm55ShCwubiCRFwMQ.jpeg);
+  color: rgb(255, 255, 255);
+}
