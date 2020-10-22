@@ -27,8 +27,6 @@
 }
 
 .border_variant_three {
-  background: no-repeat
-    url(https://i.pinimg.com/236x/b6/e6/26/b6e626582495480d86866a2e5b4cc80a.jpg);
-
-  background-size: cover;
+  border-image: linear-gradient(#3c61f7, #9f220c) 20;
+  border-image-width: 20px;
 }
