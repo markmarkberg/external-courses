@@ -5,7 +5,7 @@ const customSlice = (array, start = 0, end = array.length) => {
     start += array.length;
   }
 
-  if (Math.abs(start) > Math.abs(array.length)) {
+  if (Math.abs(start) > Math.abs(array.length - 1)) {
     start = 0;
   }
 
@@ -13,7 +13,7 @@ const customSlice = (array, start = 0, end = array.length) => {
     end += array.length;
   }
 
-  if (Math.abs(end) > Math.abs(array.length)) {
+  if (Math.abs(end) > Math.abs(array.length - 1)) {
     end = array.length;
   }
 

@@ -2,7 +2,12 @@ const customReduce = (array, callback, initialValue) => {
   const start = initialValue !== undefined ? 0 : 1;
 
   for (let i = start; i < array.length; i++) {
-    initialValue = callback(initialValue || array[0], array[i], i, array);
+    initialValue = callback(
+      initialValue !== undefined ? initialValue : array[0],
+      array[i],
+      i,
+      array
+    );
   }
 
   return initialValue;
