@@ -1,0 +1,32 @@
+.block {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 200px;
+}
+
+.border {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #657876;
+  font-size: 25px;
+  width: 200px;
+  height: 200px;
+}
+
+.border_variant_one {
+  width: 180px;
+  height: 180px;
+  border: 20px solid #657876;
+  border-radius: 10px;
+}
+
+.border_variant_two {
+  box-shadow: 0px 0px 20px 20px #657876;
+  border-radius: 30px;
+}
+
+.border_variant_three {
+  border-image: linear-gradient(#3c61f7, #9f220c) 20;
+  border-image-width: 20px;
+}

@@ -1,0 +1,36 @@
+.div {
+  width: 200px;
+  height: 200px;
+  background: #453784;
+  margin-bottom: 20px;
+}
+
+.table {
+  border-collapse: collapse;
+  border: 2px solid black;
+  margin-bottom: 20px;
+}
+tr {
+  width: 70px;
+  height: 30px;
+  border: 2px solid black;
+}
+th {
+  width: 70px;
+  height: 30px;
+  border: 2px solid black;
+}
+td {
+  border: 2px solid black;
+}
+pre {
+  color: #487654;
+}
+a {
+  text-decoration: none;
+  color: blue;
+}
+.picture {
+  width: 512px;
+  height: 288px;
+}
