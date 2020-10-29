@@ -1,10 +1,7 @@
-body {
-  padding: 30px;
-}
-
-.main {
+.wrapp {
   display: grid;
   grid-template-columns: 1fr;
+  padding: 30px;
 }
 
 header {
