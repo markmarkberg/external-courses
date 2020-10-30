@@ -1,0 +1,31 @@
+.th {
+  height: 24px;
+  border: 2px solid white;
+  text-transform: uppercase;
+  color: #6980b4;
+  font-size: 12px;
+}
+
+.td {
+  padding: 0px 10px;
+  border: 2px solid white;
+  height: 52px;
+  text-transform: capitalize;
+  color: #4c637b;
+}
+
+.td--ordinary {
+  padding: 0px 10px;
+  border: 2px solid white;
+  height: 52px;
+  color: #4c637b;
+  text-transform: none;
+}
+
+.background_first:hover {
+  background: #e2e5e9;
+}
+
+.background_first {
+  background: #e0eaf3;
+}
