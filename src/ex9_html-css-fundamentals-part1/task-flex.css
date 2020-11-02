@@ -1,0 +1,36 @@
+.wrapp {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+header {
+  background: lightblue;
+}
+
+.block {
+  display: flex;
+  justify-content: flex-start;
+}
+
+section {
+  background: lightgreen;
+  flex: 3;
+}
+
+article {
+  background: white;
+  margin: 0 0 1rem 0;
+}
+
+aside {
+  background: pink;
+  flex: 1;
+}
+
+header,
+article,
+section,
+.module {
+  padding: 1rem;
+}
