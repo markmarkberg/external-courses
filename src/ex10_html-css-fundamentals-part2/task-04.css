@@ -1,8 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  border: 2px solid red;
-  /* font-family: "Open Sans", sans-serif; */
 }
 
 .header {
@@ -84,6 +82,7 @@
 
 .communication_pfone:hover {
   filter: sepia(100%) hue-rotate(190deg) saturate(500%);
+  cursor: pointer;
 }
 
 .communication_pfone:hover ~ .popup:after {
@@ -112,6 +111,7 @@
 
 .communication_location:hover {
   filter: sepia(100%) hue-rotate(190deg) saturate(500%);
+  cursor: pointer;
 }
 
 .communication_location:hover ~ .popup:after {
@@ -139,6 +139,7 @@
 
 .communication_message:hover {
   filter: sepia(100%) hue-rotate(190deg) saturate(500%);
+  cursor: pointer;
 }
 
 .communication_message:hover ~ .popup:after {
@@ -156,6 +157,7 @@
   height: 86px;
   margin-left: 200px;
   margin-right: 250px;
+  /* font-family: 'Open Sans', sans-serif; */
 }
 
 .menu_voll {
@@ -179,6 +181,7 @@
 .header_search {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .logo:hover {
@@ -190,6 +193,7 @@
   border: none;
   width: 150px;
   margin-left: 12px;
+  color: #6d6e71;
 }
 
 .button_customization {
@@ -202,12 +206,15 @@
   background-image: none;
   background: transparent;
   background-color: transparent;
+  font-family: "Open Sans", sans-serif;
+  color: #6d6e71;
 }
 
 .button_customization:hover {
   color: #1faae2;
   background: url(img/header/active.png) no-repeat;
   background-position: bottom;
+  cursor: pointer;
 }
 
 .content {
@@ -327,6 +334,7 @@
 
 .slide_next:hover {
   background: #bdbdbe;
+  cursor: pointer;
 }
 
 .next_logo {
@@ -367,6 +375,8 @@
 .about_heading {
   font-size: 22px;
   margin-left: 33px;
+  color: #6d6e71;
+  font-family: "Open Sans", sans-serif;
 }
 
 .about_title {
@@ -376,9 +386,15 @@
   left: 140px;
 }
 
+.title {
+  color: #6d6e71;
+}
+
 .exist_heading {
   font-size: 22px;
   margin-left: 33px;
+  color: #6d6e71;
+  font-family: "Open Sans", sans-serif;
 }
 
 .exist_logo {
