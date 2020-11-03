@@ -13,10 +13,10 @@
   font-family: "Open Sans", sans-serif;
 }
 
-.background_second {
+tr:nth-child(2n) {
   background: #f2f6fa;
 }
 
-.background_second:hover {
+tr:nth-child(2n):hover {
   background: #e2e5e9;
 }

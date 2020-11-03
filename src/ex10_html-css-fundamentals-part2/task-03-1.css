@@ -10,8 +10,11 @@
   padding: 0px 10px;
   border: 2px solid white;
   height: 52px;
-  text-transform: capitalize;
   color: #4c637b;
+}
+
+.td:first-child {
+  text-transform: capitalize;
 }
 
 .td--ordinary {
@@ -19,13 +22,9 @@
   border: 2px solid white;
   height: 52px;
   color: #4c637b;
-  text-transform: none;
 }
 
-.background_first:hover {
-  background: #e2e5e9;
-}
-
-.background_first {
+tr:nth-child(1n) {
   background: #e0eaf3;
 }
+

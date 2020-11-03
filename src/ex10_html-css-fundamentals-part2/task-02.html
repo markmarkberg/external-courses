@@ -6,93 +6,93 @@
   </head>
   <body>
     <fieldset>
-        <legend>Personal Data</legend>
-        <form action="http://httpbin.org/get" method="GET">
-          <br />
-          <label for="surname">Surname</label>
-          <input id="surname" type="text" name="surname" />
-          <p>
-            <label for="firstName">First Name</label>
-            <input id="firstName" type="text" name="firstName" />
-          </p>
-          <p>
-            <label for="middleName">Middle Name</label>
-            <input id="middleName" type="text" name="middleName" />
-          </p>
-  
-          You are <input type="radio" name="a" id="you" /> make <input
-            type="radio"
-            name="a"
-            id="make"
-          />female
-          <br />
-          <p>
-            <label for="age">Age</label>
-            <input id="age" type="number" min="18" max="101" name="age" />
-          </p>
-          <p>
-            <label>
-              Country of Residence
-              <select>
-                <option value="Russia">Russia</option>
-                <option value="USA">USA</option>
-              </select>
-            </label>
-          </p>
-          City<input type="checkbox" name="a" id="a_1" /> Ryzan<input
-            type="checkbox"
-            name="a"
-            id="a_2"
-          />Moscow
-          <p style="text-align: left">
-            Photography&nbsp;<button>Выберете файл</button>&nbsp;Файл не выбран
-          </p>
-          <hr />
-          <label for="title"
-            >Title
-            <select id="title" size="8">
-              <optgroup label="Technologies">
-                <option value="master">Web Master</option>
-                <option value="administrator">Database Administrator</option>
-                <option value="design">Computer-aided design</option>
-              </optgroup>
-              <optgroup label="Finance">
-                <option value="economicPlanning">Economic Planning</option>
-                <option value="according">Management according</option>
-                <option value="budgetAndPlanning">Budgeting and planning</option>
-              </optgroup>
+      <legend>Personal Data</legend>
+      <form action="http://httpbin.org/get" method="GET">
+        <br />
+        <label for="surname">Surname</label>
+        <input id="surname" type="text" name="surname" />
+        <p>
+          <label for="firstName">First Name</label>
+          <input id="firstName" type="text" name="firstName" />
+        </p>
+        <p>
+          <label for="middleName">Middle Name</label>
+          <input id="middleName" type="text" name="middleName" />
+        </p>
+
+        You are <input type="radio" name="a" id="you" /> make
+        <input type="radio" name="a" id="make" />female
+        <br />
+        <p>
+          <label for="age">Age</label>
+          <input id="age" type="number" min="18" max="101" name="age" />
+        </p>
+        <p>
+          <label>
+            Country of Residence
+            <select>
+              <option value="Russia">Russia</option>
+              <option value="USA">USA</option>
             </select>
           </label>
-          <p>
-            Salary<input type="range" min="10" max="50" step="1" value="50" />
-          </p>
-          <p>
-            <textarea rows="10" cols="45" name="text">
+        </p>
+        City<input type="checkbox" name="a" id="a_1" /> Ryzan<input
+          type="checkbox"
+          name="a"
+          id="a_2"
+        />Moscow
+        <p style="text-align: left">
+          Photography&nbsp;<button>Выберете файл</button>&nbsp;Файл не выбран
+        </p>
+        <hr />
+        <label for="title"
+          >Title
+          <select id="title" size="8">
+            <optgroup label="Technologies">
+              <option value="master">Web Master</option>
+              <option value="administrator">Database Administrator</option>
+              <option value="design">Computer-aided design</option>
+            </optgroup>
+            <optgroup label="Finance">
+              <option value="economicPlanning">Economic Planning</option>
+              <option value="according">Management according</option>
+              <option value="budgetAndPlanning">Budgeting and planning</option>
+            </optgroup>
+          </select>
+        </label>
+        <p>
+          Salary<input type="range" min="10" max="50" step="1" value="50" />
+        </p>
+        <p>
+          <textarea rows="10" cols="45" name="text">
   Tell us about yourself...</textarea
-            >
-          </p>
-        </form>
-      </fieldset>
-      <fieldset>
-        <legend>Contact information</legend>
-        <form action="URL" method="GET">
-          <br />
-          <label for="site">Site</label>
-          <input id="site" type="text" name="site" />
-          <p>
-            <label for="email">Email</label>
-            <input id="email" type="text" name="email" />
-          </p>
-  
-          <p>
-            <label for="phone">Phone</label>
-            <input id="phone" type="text" name="phone" />
-          </p>
-        </form>
-      </fieldset>
-      <br />
-      <label for="password">Password</label>
-      <input id="password" required type="text" name="password" />
-      <p><button>Отправить</button> <button>Сбросить</button></p>
+          >
+        </p>
+      </form>
+    </fieldset>
+    <fieldset>
+      <legend>Contact information</legend>
+      <form action="URL" method="GET">
+        <br />
+        <label for="site">Site</label>
+        <input id="site" type="text" name="site" />
+        <p>
+          <label for="email">Email</label>
+          <input id="email" type="text" name="email" />
+        </p>
+
+        <p>
+          <label for="phone">Phone</label>
+          <input id="phone" type="text" name="phone" />
+        </p>
+      </form>
+    </fieldset>
+    <br />
+    <label for="password">Password</label>
+    <input id="password" required type="text" name="password" />
+    <p>
+      <button type="submit">Отправить</button>
+      <button type="reset">Сбросить</button>
+    </p>
   </body>
 </html>

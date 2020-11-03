@@ -1,8 +1,10 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Open Sans", sans-serif;
+  border: 2px solid red;
+  /* font-family: "Open Sans", sans-serif; */
 }
+
 .header {
   margin-top: 58px;
   width: 100%;
@@ -151,10 +153,16 @@
 .header_menu {
   display: flex;
   justify-content: space-between;
-  margin-top: 65px;
   height: 86px;
   margin-left: 200px;
   margin-right: 250px;
+}
+
+.menu_voll {
+  width: 100%;
+  height: 1px;
+  background: #eceef4;
+  margin-top: 65px;
 }
 
 .menu_container {
@@ -222,26 +230,27 @@
 }
 
 .item_center_logo {
-  margin-top: 17px;
+  margin-top: 13px;
+  margin-left: 3px;
   width: 88px;
   height: 91px;
   background: url(img/content/item_logo.png) no-repeat;
 }
 
-.item_center_text_b {
+.item_center_text_draw {
   position: absolute;
   top: 0px;
   left: 0px;
   margin-bottom: 50px;
-  font-size: 45px;
-  font-weight: bold;
+  width: 610px;
+  height: 48px;
 }
 
-.item_center_text_p {
-  margin-top: 74px;
+.item_center_text_make {
+  margin-top: 65px;
   margin-left: 14px;
-  font-size: 29px;
-  font-family: "Open sans";
+  width: 660px;
+  height: 45px;
 }
 
 .content_slide {
@@ -268,6 +277,7 @@
   width: 322px;
   height: 66px;
   color: #ffffff;
+
   opacity: 0.8;
 }
 
@@ -277,6 +287,7 @@
 
 .items_like--yellow {
   background: #feeb75;
+  color: #cc9800;
 }
 
 .like_logo_green {
@@ -394,6 +405,11 @@
     justify-content: space-between;
     padding-top: 20px;
     margin-top: 0;
+    height: 75px;
+  }
+
+  .menu_voll {
+    display: none;
   }
 
   .header_block {
@@ -402,8 +418,8 @@
 
   .header_burger {
     display: block;
-    width: 60px;
-    height: 60px;
+    width: 61px;
+    height: 57px;
     background: url(img/header/menu.svg) no-repeat;
     margin-left: 10px;
     border: none;
@@ -411,9 +427,13 @@
   }
 
   .header_logo {
-    width: 105px;
-    height: 42px;
-    font-size: 35px;
+    width: 150px;
+    height: 65px;
+    font-size: 50px;
+  }
+
+  .header_search {
+    height: 55px;
   }
 
   .header_menu {
