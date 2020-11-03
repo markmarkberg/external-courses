@@ -24,7 +24,10 @@
   color: #4c637b;
 }
 
-tr:nth-child(1n) {
+tr {
   background: #e0eaf3;
 }
 
+tr:hover {
+  background: #e2e5e9;
+}
