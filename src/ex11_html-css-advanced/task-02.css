@@ -1,0 +1,78 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.block {
+  display: flex;
+  border: 1px solid grey;
+  width: 320px;
+  height: 320px;
+}
+
+.form {
+  padding: 10px 10px 10px 10px;
+}
+
+.input {
+  margin-left: 15px;
+}
+
+.field {
+  position: relative;
+  font-family: Arial;
+  font-weight: bold;
+  display: inline-block;
+}
+label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: all 0.2s linear;
+  color: #999;
+  font-size: 10px;
+}
+#title {
+  width: 295px;
+  height: 40px;
+  border: none;
+  border-bottom: 1px solid #999;
+}
+
+#price {
+  width: 50px;
+  height: 40px;
+  border: none;
+  border-bottom: 1px solid #999;
+  border-right: 1px solid #999;
+}
+
+#location {
+  width: 235px;
+  height: 40px;
+  margin-left: 0px;
+  border: none;
+  border-bottom: 1px solid #999;
+}
+
+#description {
+  width: 295px;
+  height: 40px;
+  border: none;
+  border-bottom: 1px solid #999;
+}
+
+input:invalid + label {
+  top: 3px;
+  opacity: 0;
+}
+input:valid + label {
+  opacity: 1;
+  top: 0;
+}
+input:focus {
+  outline: none;
+}
+input:focus + label {
+  color: darkcyan;
+}
