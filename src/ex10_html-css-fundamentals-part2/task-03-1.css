@@ -1,0 +1,30 @@
+.th {
+  height: 24px;
+  border: 2px solid white;
+  text-transform: uppercase;
+  color: #6980b4;
+  font-size: 12px;
+}
+
+.td {
+  padding: 0px 10px;
+  border: 2px solid white;
+  height: 52px;
+  color: #4c637b;
+}
+
+.td:first-child {
+  text-transform: capitalize;
+}
+
+.td--ordinary {
+  padding: 0px 10px;
+  border: 2px solid white;
+  height: 52px;
+  color: #4c637b;
+}
+
+tr:nth-last-child(2n + 1) {
+  background: #e0eaf3;
+}
+

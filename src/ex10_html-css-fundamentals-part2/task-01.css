@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.item {
+  width: 300px;
+  height: 200px;
+  margin-top: 50px;
+}
+
+.item_custom-circle {
+  border: 1px solid grey;
+  border-radius: 50%;
+}
+
+.item_custom-mask {
+  clip-path: polygon(60% 0%, 75% 0%, 100% 50%, 75% 100%, 60% 100%, 0% 50%);
+}
