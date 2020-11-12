@@ -1,0 +1,74 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(https://wordyboard.com/wp-content/uploads/2019/02/Tantrum-Charger-american-muscle-hypercar-13.jpg);
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  width: 1000px;
+  height: 600px;
+  border: 2px solid grey;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px darkcyan;
+  background: darkgray;
+}
+
+.wrapper_button_items {
+  width: 35px;
+  height: 70px;
+  font-size: 36px;
+  border: none;
+  background: darkgray;
+  border-radius: 8px;
+}
+
+.wrapper_button_items:hover {
+  box-shadow: black 0px 0px 8px;
+  cursor: pointer;
+}
+
+.wrapper_button_items:active {
+  background: blanchedalmond;
+  cursor: grabbing;
+}
+
+.images {
+  width: 900px;
+  height: 600px;
+}
+
+.images_off {
+  position: absolute;
+  width: 900px;
+  height: 600px;
+  opacity: 0;
+}
+
+.images_active {
+  opacity: 1;
+  width: 900px;
+  height: 600px;
+  animation: transition_images 0.5s 1 linear;
+}
+
+@keyframes transition_images {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
