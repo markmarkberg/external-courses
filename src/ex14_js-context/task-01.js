@@ -40,8 +40,9 @@ class Calculator {
     this.result = num;
     return this;
   }
-  fetchData(callback) {
-    setTimeout(() => callback(500), 1000);
+  fetchData(func) {
+    setTimeout(func.bind(this, 500), 2000);
+   return this;
   }
 }
 
