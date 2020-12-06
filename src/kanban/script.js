@@ -193,11 +193,8 @@ getMock[3].issues.forEach((el) => {
 });
 
 const button = document.querySelector('.add_el');
-
 const buttonFind = document.querySelectorAll('.item_add');
-
 const item = document.querySelector('.content_block_size ');
-
 const input = document.createElement('input');
 
 const addInput = () => {
@@ -213,9 +210,7 @@ button.addEventListener('click', () => {
 });
 
 const buttonReady = document.querySelector('.ready_add');
-
 const buttonProgress = document.querySelector('.inprogress_add');
-
 const buttonFinished = document.querySelector('.finished_add');
 
 input.addEventListener('blur', (e) => {
@@ -250,7 +245,7 @@ input.addEventListener('blur', (e) => {
     buttonReady.removeAttribute('disabled');
   }
 
-  resetMock();
+   resetMock();
 });
 
 let select = document.createElement('select');
@@ -388,5 +383,5 @@ function moveDataTasks(cardTitle, taskId) {
     getMock[3].issues.push(element);
     getMock[2].issues.splice(indexElement, 1);
   }
-  resetMock();
+   resetMock();
 }
