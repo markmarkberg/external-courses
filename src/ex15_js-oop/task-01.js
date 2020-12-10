@@ -1,30 +1,28 @@
-function worksWithSweets(candy, amount) {
+function WithSweets(candy) {
   this.sweetsList = candy;
-  this.sweetsAmount = amount;
 }
 
-function createCandyStructure(nameSweet, weigtSweet) {
+function CandyStructure(nameSweet, weigtSweet) {
   this.name = nameSweet;
   this.weigt = weigtSweet;
 }
 
-const candySnickers = new createCandyStructure("Сникерс", 50);
-const candyMilkyWay = new createCandyStructure("МилкиУэй", 25);
-const candyBounty = new createCandyStructure("Баунти", 48);
-const candyMars = new createCandyStructure("Марс", 52);
+const candySnickers = new CandyStructure("Сникерс", 50);
+const candyMilkyWay = new CandyStructure("МилкиУэй", 25);
+const candyBounty = new CandyStructure("Баунти", 48);
+const candyMars = new CandyStructure("Марс", 52);
 
-const candyForMe = new worksWithSweets(
+const candyForMe = new WithSweets(
   [candySnickers, candyMilkyWay, candyBounty],
-  1
-);
-const candyForKids = new worksWithSweets(
-  [candyMars, candyMilkyWay, candySnickers],
-  2
 );
 
-worksWithSweets.prototype.findCandy = function (nameCandy) {
+const candyForKids = new WithSweets(
+  [candyMars, candyMilkyWay, candySnickers],
+);
+
+WithSweets.prototype.findCandy = function (nameCandy) {
   let hasCandy = false;
-  this.sweetsList.forEach(function (candy) {
+  this.sweetsList.find((candy) => {
     if (candy.name === nameCandy) {
       hasCandy = true;
     }
@@ -34,21 +32,25 @@ worksWithSweets.prototype.findCandy = function (nameCandy) {
     : `Батончик ${nameCandy} нет в наборе`;
 };
 
-worksWithSweets.prototype.sortCandy = function () {
+WithSweets.prototype.sortCandy = function () {
   return this.sweetsList.sort(function (a, b) {
     return a.weigt < b.weigt ? 1 : -1;
   });
 };
 
-worksWithSweets.prototype.countMassCandy = function () {
+WithSweets.prototype.countMassCandy = function () {
   let mass = 0;
-  this.sweetsList.forEach((el) => {
-    mass += el.weigt * this.sweetsAmount;
+  return this.sweetsList.reduce((prevEl, currentEl) => {
+    if (prevEl.weigt === undefined) {
+      return prevEl + currentEl.weigt;
+    }
+    return prevEl.weigt + currentEl.weigt;
   });
-  return mass;
 };
 
-console.log(`Подарок для детей весит ${candyForKids.countMassCandy()} грамм`);
+console.log(
+  `Подарок для детей весит ${candyForKids.countMassCandy() * 2} грамм`
+);
 console.log(`Подарок для меня весит ${candyForMe.countMassCandy()} грамм`);
 console.log(candyForMe.sortCandy());
 console.log(candyForKids.findCandy("Чупа-чупс"));
