@@ -4,14 +4,12 @@ class Room {
   }
 
   getPowerConsumptionInRoom() {
-    let powerCounter = 0;
-    this.applianceListInRoom.forEach(function (el) {
-      if (el.powerAppliance) {
-        powerCounter += el.powerAppliance;
+    return this.applianceListInRoom.reduce((prevEl, currentEl) => {
+      if (prevEl.powerAppliance === undefined) {
+        return prevEl + currentEl.powerAppliance;
       }
+      return prevEl.powerAppliance + currentEl.powerAppliance;
     });
-
-    return powerCounter;
   }
 
   getSortPowerAppliance() {
@@ -23,20 +21,15 @@ class Room {
 
 class Hall extends Room {
   constructor(applianceList) {
-    super();
-    this.applianceListInRoom = applianceList;
+    super(applianceList);
   }
 
   findAppliance(nameDevice) {
-    let applianceFlag = false;
+    let findName = this.applianceListInRoom.find(
+      (el) => el.name === nameDevice
+    );
 
-    this.applianceListInRoom.forEach(function (el) {
-      if (el.name === nameDevice) {
-        applianceFlag = true;
-      }
-    });
-
-    return applianceFlag
+    return findName
       ? `Прибор ${nameDevice} есть в комнате`
       : `Прибора ${nameDevice} нет в комнате`;
   }
@@ -50,7 +43,7 @@ class Device {
 }
 
 let computer = new Device("Компьютер", 1000);
-let lamps = new Device("Лампы", 200, true);
+let lamps = new Device("Лампы", 200);
 let audioSystem = new Device("Аудиосистема", 2500);
 let hairDryer = new Device("Фен", 2000);
 let conditioner = new Device("Кондиционер", 2200);
