@@ -1,0 +1,19 @@
+.footer_kit {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.footer_left {
+  display: flex;
+  margin-left: 67px;
+}
+
+.footer_right {
+  margin-right: 24px;
+}
+
+.footer_left_active {
+  margin-right: 36px;
+}
