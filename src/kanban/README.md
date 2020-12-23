@@ -1,44 +1,58 @@
-# Webpack main configuration example
+# Kanban board
 
-## Features
+# Сборка осуществляется через сборщик модулей Webpack v5
 
--   `.js` files process by `babel` - JavaScript compiler
--   configured `webpack-dev-server`
--   `HtmlWebpackPlugin` simplifies creation of HTML files to serve your webpack bundles
--   `.svg`,`.png`, `.jpg` files processed by `file-loader`
--   `.css` files processed by `style-loader` and `css-loader`, has css modules support
--   to use css as module, it should be named as `*.module.css`, f.e.:
+##  Функционал менеджера задач Канбан
 
-```js
-import css from "./header.module.css";
+- Сортировка задач
 
-<header style="${css.header}"></header>;
+- Возможность создавать новые списки задач а также удалять
+
+- Возможность перемещать задачи по листам а также добавлять новые
+
+- Внизу сайта расположены счетчики активных и завершенных списков задач
+
+## Работа с Kanban
+
+- В шапке сайта кнопка "Create new list" создает новые списки задач, после нажатия необходимо ввести название блока
+
+- В шапке сайта в правом углу расположена иконка при нажатии на которую открывается список возможностей работы с аккаунтом
+
+- Кнопка "Add card" в первом блоке добавляет новую задачу, название задачи ввести в появившемся инпуте
+
+- В остальных блоках кнопка "Add card" открывает выпадающий список в котором необходимо выбрать задачу для перемещения
+
+## Для работы с проектом необходимо установить:
+
+```bash
+  node.js
 ```
 
--   you can also import your `.html` file (processed by `html-loader`):
-
-```js
-import "./component.css";
-import html from "./board.html";
-
-component.innerHTML = html;
+```bash
+  Модули:
 ```
 
-## Installation
+- `babel`
+- `webpack-dev-server`
+- `HtmlWebpackPlugin`
+- `file-loader`
+- `style-loader` и `css-loader`
 
-Clone project to your folder and then install dependencies:
+## Установка
+
+Склонируйте проект в свою папку, а затем установите зависимости:
 
 ```bash
 npm install
 ```
 
-How to run WebPack dev server:
+Как запустить WebPack dev server:
 
 ```bash
 npm start
 ```
 
-How to build project:
+Как собрать проект:
 
 ```bash
 npm run build

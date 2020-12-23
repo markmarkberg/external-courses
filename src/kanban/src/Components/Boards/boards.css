@@ -1,3 +1,13 @@
+.content_block_size {
+  min-width: 258px;
+  height: min-content;
+  background: #ebecf0;
+  border-radius: 10px;
+  padding: 12px 12px 8px 12px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
 .content_block_input {
   display: flex;
   justify-content: center;
@@ -13,9 +23,69 @@
 }
 
 .block_heading_logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  width: 30px;
+  height: 20px;
+}
+
+.block_heading_logo:hover {
+  cursor: pointer;
+}
+
+.block_heading_logo_up {
+  position: relative;
+}
+
+.heading_window_active {
+  opacity: 1;
+}
+
+.heading_window_disable {
+  opacity: 0;
+}
+
+.heading_window {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  top: 20px;
+  left: -47px;
+  width: 70px;
+  height: 35px;
+  border: 2px solid rgb(184, 184, 184);
+  border-radius: 5px;
+  background: #0067a3;
+}
+
+.heading_window::after {
+  top: -10px;
+  position: absolute;
+  content: " ";
+  width: 15px;
+  height: 15px;
+  background: #0067a3;
+  border: 2px solid rgb(184, 184, 184);
+  border-radius: 2px;
+  border-width: 2px 0 0 2px;
+  transform: rotate(-315deg);
+}
+
+.window_text {
+  font-size: 15px;
+  color: #a3bff0;
+}
+
+.block_heading_logo_text {
   width: 16px;
-  height: 5px;
+  height: 6px;
   background: url(../../img/main/dots.png) no-repeat;
+  margin-right: 2px;
 }
 
 .content_item {
@@ -55,7 +125,7 @@
 }
 
 .disable {
-  opacity: 0.3;
+  opacity: 0.4;
   cursor: auto;
 }
 

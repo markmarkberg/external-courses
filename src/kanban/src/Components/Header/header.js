@@ -30,20 +30,20 @@ export const header = () => {
   const listActive = () => {
     dropdown.classList.add("dropdown_logo_rotate");
     document.querySelector(".dropdown_container").append(container);
+    buttonDrop.dataset.index = "true";
   };
 
   const removeDropList = () => {
     document.querySelector(".dropdown_list_active").remove();
     dropdown.classList.remove("dropdown_logo_rotate");
+    buttonDrop.dataset.index = "false";
   };
 
   buttonDrop.addEventListener("click", () => {
     if (buttonDrop.dataset.index === "false") {
       listActive();
-      buttonDrop.dataset.index = "true";
     } else {
       removeDropList();
-      buttonDrop.dataset.index = "false";
     }
   });
 };

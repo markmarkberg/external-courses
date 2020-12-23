@@ -62,13 +62,6 @@
   cursor: pointer;
 }
 
-.create_list_logo {
-  width: 22px;
-  height: 22px;
-  margin: auto 13px auto 9px;
-  background: #ffffff;
-}
-
 .account {
   display: flex;
   justify-content: center;
@@ -88,6 +81,9 @@
 }
 
 .account_user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -98,9 +94,8 @@
   box-shadow: black 0px 0px 10px;
 }
 
-.account_user_logo {
-  width: 28px;
-  height: 35px;
+.account_user:active {
+  cursor: grabbing;
 }
 
 .dropdown {
