@@ -33,9 +33,11 @@ export const addEl = () => {
       getInputId.remove();
       getMock.splice(0, 1);
       count(getMock);
+
       if (e.target.value.length > 0) {
         createList(e.target.value, "create", getMock);
       }
+      
       list.dataset.index = "false";
       resetMock(getMock);
     });

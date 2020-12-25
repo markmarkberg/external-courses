@@ -46,7 +46,6 @@ export const boards = (mockArr, input) => {
 
     const blockForUp = document.createElement("div");
     blockForUp.classList.add("block_heading_logo_up");
-
     blockForUp.append(popUp);
 
     blockLogo.append(logoParagraph, blockForUp);
@@ -85,10 +84,12 @@ export const boards = (mockArr, input) => {
     blockTask.classList.add(
       `${card.title.split(" ").join("").toLowerCase()}_task`
     );
+
     blockInput.setAttribute(
       "id",
       `${card.title.split(" ").join("").toLowerCase()}_input`
     );
+
     if (index !== 0) {
       button.classList.add(
         `${card.title.split(" ").join("").toLowerCase()}_add`
@@ -217,6 +218,7 @@ export const boards = (mockArr, input) => {
           name: nameTask,
         });
       }
+
       if (nameTask.length > 0) {
         const div = document.createElement("div");
         div.classList.add("content_item");

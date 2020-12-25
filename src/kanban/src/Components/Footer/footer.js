@@ -1,22 +1,27 @@
 import "./footer.css";
 export const count = (mock) => {
   const countActiveTask = () => {
-    const arr = [];
+    let count = 0;
 
-    for (let i = 1; i < mock.length - 1; i++) {
-      mock[i].issues.forEach((el) => {
-        arr.push(el);
-      });
-    }
-    const resultActive = arr.length;
+    mock.forEach((title, i) => {
+      if (i !== 0 && i < mock.length - 1) {
+        title.issues.forEach((el) => {
+          count++;
+        });
+      }
+    });
+
+    const resultActive = count;
     const contentActive = document.querySelector(".footer_left_active");
     contentActive.innerHTML = `Active tasks: &lt; ${resultActive} &gt;`;
   };
+
   const countFinishTask = () => {
     const resultFinish = mock[mock.length - 1].issues.length;
     const contentFinish = document.querySelector(".footer_left_finish");
     contentFinish.innerHTML = `Finished tasks: &lt; ${resultFinish} &gt;`;
   };
+
   countActiveTask();
   countFinishTask();
 };
