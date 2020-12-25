@@ -13,12 +13,10 @@ export const createList = (nameBoard, value, mockData) => {
     inputHeader.setAttribute("type", "text");
     inputHeader.setAttribute("required", "required");
     inputHeader.setAttribute("placeholder", "Enter name for board");
-    // console.log(mockData);
     mockData.unshift(newlist);
     boards(mockData, inputHeader);
   }
   if (value === "create") {
-    // console.log(mockData);
     mockData.unshift(newlist);
     boards(mockData);
   }

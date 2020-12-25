@@ -251,6 +251,5 @@ export const boards = (mockArr, input) => {
   });
   task(mockArr);
   count(mockArr);
-  // console.log(`${mockArr} boards`);
   resetMock(mockArr);
 };

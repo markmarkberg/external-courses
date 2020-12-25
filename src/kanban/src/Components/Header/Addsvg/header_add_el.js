@@ -1,14 +1,13 @@
 import { resetMock } from "../../Resetmock/reset.js";
 import { createList } from "../../Newlist/newlist";
 import { boards } from "../../Boards/boards.js";
+import { count } from "../../Footer/footer.js";
 import "./addEl.css";
 
 export const addEl = () => {
   const raw = localStorage.getItem("Data");
   const getMock = JSON.parse(raw);
   boards(getMock);
-  // console.log(getMock);
-  // console.log(`${getMock} parse get item Data`);
 
   const list = document.querySelector(".create_list");
   list.setAttribute("data-index", "false");
@@ -33,6 +32,7 @@ export const addEl = () => {
       getInput.remove();
       getInputId.remove();
       getMock.splice(0, 1);
+      count(getMock);
       if (e.target.value.length > 0) {
         createList(e.target.value, "create", getMock);
       }
