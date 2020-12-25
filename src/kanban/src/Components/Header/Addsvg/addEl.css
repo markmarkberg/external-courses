@@ -1,0 +1,22 @@
+.create_list_logo {
+  width: 22px;
+  height: 22px;
+  margin: auto 13px auto 9px;
+  background: url(../../../img/header/add.svg) no-repeat;
+}
+
+.account_user_logo {
+  width: 28px;
+  height: 35px;
+  background: url(../../../img/header/avatar.svg) no-repeat;
+}
+
+.create_list_input {
+  width: 181px;
+  height: 33px;
+  background: #ffffff;
+  border-radius: 5px;
+  border: none;
+  font-size: 17px;
+  padding-left: 8px;
+}

@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <title>kanban</title>
-    <link rel="stylesheet" href="task.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
@@ -16,22 +15,9 @@
         <p class="header_left_text">Awesome Kanban Board</p>
       </div>
       <div class="header_right">
-        <button class="create_list" tabindex="2">
-          <img
-            class="create_list_logo"
-            src="img/header/add.svg"
-            alt="Добавить лист"
-          />
-          Create new list
-        </button>
+        <button class="create_list" tabindex="2"></button>
         <button class="account" tabindex="3">
-          <div class="account_user">
-            <img
-              class="account_user_logo"
-              src="img/header/avatar.svg"
-              alt="Фото пользователя"
-            />
-          </div>
+          <div class="account_user"></div>
           <div class="dropdown dropdown_logo"></div>
         </button>
         <div class="dropdown_container"></div>
@@ -40,13 +26,14 @@
     <main class="content"></main>
     <footer class="style_for_block">
       <div class="footer_kit footer_left">
-        <p class="footer_left_active">Active tasks: &lt;N&gt;</p>
-        <p>Finished tasks: &lt;M&gt;</p>
+        <p class="footer_left_active"></p>
+        <p class="footer_left_finish"></p>
       </div>
       <div class="footer_kit footer_right">
         <p>Kanban board by &lt;markberg&gt;, &lt;2020&gt;</p>
       </div>
     </footer>
-    <script src="script.js"></script>
   </body>
 </html>
+
+<!-- <div class="heading_window"><p class="window_text">Delete</p></div> -->
